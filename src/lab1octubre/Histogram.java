@@ -2,16 +2,18 @@ package lab1octubre;
 
 import java.util.HashMap;
 
-public class Histogram {
-    private  final int[] vector;
+public class Histogram<T> {
+    
+    
+    private final T[] vector;
 
-    public Histogram(int[] vector) {
+    public Histogram(T[] vector) {
         this.vector = vector;
     }
-    
-    public HashMap <Integer,Integer> getHisto (){
+
+    public HashMap <T,Integer> getHisto (){
         
-        HashMap <Integer,Integer> histo = new HashMap<>();
+        HashMap <T,Integer> histo = new HashMap<>();
          
         for (int i = 0; i < vector.length; i++) {
             
