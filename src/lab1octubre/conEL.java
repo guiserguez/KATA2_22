@@ -10,10 +10,8 @@ public class conEL {
         
         
         String[] nombre = {"Pepe", "Juan", "Juantxopino", "Salva","Goretti", "Juantxopino","Goretti", "Goretti"};
-
-        Histogram histo = new Histogram(vector);
         
-        HashMap <Object,Integer> histogram = histo.getHisto();
+        Histogram <Integer> histogram = CalculaHistogram.computeHisto(vector);
         
         for(Object key : histogram.keySet()){
         
